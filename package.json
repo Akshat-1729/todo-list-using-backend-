@@ -1,0 +1,22 @@
+{
+  "name": "todo-list",
+  "version": "1.0.0",
+  "description": "a todo list to keep track of all your tasks",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Akshat-1729/todo-list-using-backend-.git"
+  },
+  "author": "akshat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Akshat-1729/todo-list-using-backend-/issues"
+  },
+  "homepage": "https://github.com/Akshat-1729/todo-list-using-backend-#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
