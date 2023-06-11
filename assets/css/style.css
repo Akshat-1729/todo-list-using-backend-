@@ -109,5 +109,45 @@ hr{
     background-color: rgb(200, 134, 236); 
     box-shadow: 1px 3px 8px 1.8px rgb(228, 188, 249);
     transform: scale(1.03);
-
+}
+ul{
+    list-style-type: none;
+}
+.tick-box{
+    display: inline-block;
+    vertical-align:top;
+    margin-top: 10px;
+}
+.task-info{
+    font-family: cursive;
+    margin-left: 20px;
+    margin-top: -15px;
+    display: inline-block;
+    width: 72%;
+}
+.task-info h3{
+    letter-spacing: 1px;
+    color: antiquewhite;
+}
+.task-info p{
+    color: azure;
+    padding-left: 5px;
+}
+.cat{
+    display: inline-block;
+    vertical-align: top;
+}
+.cat{
+    border-radius: 3px;
+    width: 100px;
+    border:  1px solid red;
+    background-color: coral;
+}
+.cat h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: aliceblue;
+}
+.box{
+    margin-bottom: 10px;
 }
