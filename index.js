@@ -1,13 +1,15 @@
 const express=require('express');
-const port=8000;
 const app=express();
+const port=8000;
 
+app.use(express.static('assets'));
 //use express router
-app.use('/',require('./routes'))
-
-//setup the view engine
-app.use('view engine','ejs');
-app.use('view','./views');
+app.use('/',require('./routes'));
+app.set('view engine','ejs');
+app.set('views','./views');
+// //setup the view engine
+// app.use('view engine','ejs');
+// app.use('view','./views');
 
 app.listen(port,function(err){
     if(err){
