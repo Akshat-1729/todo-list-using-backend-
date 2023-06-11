@@ -59,3 +59,15 @@ hr{
     background-color: rgb(210, 206, 246);
     letter-spacing: 1px;
 }
+#dates{
+    display: inline-block;
+    vertical-align: top;
+    border-right: 2px solid whitesmoke;
+    width: 17%;
+    
+    padding-right: 25px;
+}
+#date-box{
+    margin-top: -2px;
+    width: 100px;
+}
