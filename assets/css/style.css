@@ -13,7 +13,7 @@ hr{
     height: 1.5px;
     border: none;
     background-color: rgb(255, 255, 255);
-    margin: 30px;
+    margin: 30px 30px 10px 30px;
 }
 #forms{
     margin-left: 10px;
@@ -21,7 +21,41 @@ hr{
 #forms h3{
     color: aliceblue;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left:5px;
 }
 #forms input{
+    height: 40px;
+    width: 95%;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    margin-left: 10px;
+    padding-left: 10px;
+    background-color: rgb(203, 198, 248);
+    border: 2px solid rgb(47, 2, 2);
+    font-family: cursive;
+}
+#forms input::placeholder{
+    padding-left: 5px;
+}
+#forms input:focus{
+    background-color: rgb(205, 201, 240);
+}
+#catgry{
+    border-right: 2px solid rgb(250, 223, 223);
+    width: 50%;
+    display: inline-block;
+}
+#category-box{
+    margin-left: 10px;
+    width: 94%;
     height: 30px;
+    font-family: cursive;
+    border: none;
+    border-radius: 7px;
+    font-size: medium;
+    outline: none;
+    padding-left: 5px;
+    background-color: rgb(210, 206, 246);
+    letter-spacing: 1px;
 }
