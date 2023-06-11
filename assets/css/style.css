@@ -13,7 +13,7 @@ hr{
     height: 1.5px;
     border: none;
     background-color: rgb(255, 255, 255);
-    margin: 30px 30px 10px 30px;
+    margin: 30px 20px 10px 20px;
 }
 #forms{
     margin-left: 10px;
@@ -42,8 +42,8 @@ hr{
     background-color: rgb(205, 201, 240);
 }
 #catgry{
-    border-right: 2px solid rgb(250, 223, 223);
     width: 50%;
+    height: 115px;
     display: inline-block;
 }
 #category-box{
@@ -62,12 +62,52 @@ hr{
 #dates{
     display: inline-block;
     vertical-align: top;
-    border-right: 2px solid whitesmoke;
     width: 17%;
-    
+    height: 115px;
     padding-right: 25px;
 }
 #date-box{
     margin-top: -2px;
     width: 100px;
+}
+#line{
+    height: 1.5px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    margin: 0px 20px;
+}
+.buttons{
+    margin-top: 15px;
+    text-align: center;
+
+}
+.buttons button{
+    margin-right: 15px;
+    height: 47px;
+    width: 180px;
+    font-size: large;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(242, 151, 151);
+    outline: none;
+    letter-spacing: 0.7px;
+    border-radius: 7px;
+    border: none;
+    box-shadow: 1px 3px 8px 1.8px rgb(255, 114, 114);
+    transition: 0.2s ease-in-out;
+}
+#delete{
+    background-color: rgb(213, 165, 238); 
+    box-shadow: 1px 3px 8px 1.8px rgb(206, 114, 255);
+}
+#add:hover{
+    box-shadow: 1px 3px 10px 1.8px rgb(255, 238, 238);
+    background-color: rgb(247, 134, 134);
+    transform: scale(1.03);
+}
+#delete:hover{
+    background-color: rgb(200, 134, 236); 
+    box-shadow: 1px 3px 8px 1.8px rgb(228, 188, 249);
+    transform: scale(1.03);
+
 }
