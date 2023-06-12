@@ -1,7 +1,7 @@
 body{
     margin: 0%;
     background: linear-gradient(to bottom right,rgb(19, 1, 1),rgb(69, 3, 3));
-    
+    height: 100vh;
 }
 
 header h1{
@@ -75,7 +75,7 @@ hr{
     height: 1.5px;
     border: none;
     background-color: rgb(255, 255, 255);
-    margin: 0px 20px;
+    margin:0px 20px 0px 10px;
 }
 .buttons{
     display: flex;
@@ -165,15 +165,15 @@ ul{
     display: inline-block;
 }
 .done a input{
-    background: linear-gradient(135deg,rgb(122, 19, 122),rgb(231, 191, 243));
+    background: linear-gradient(135deg,rgb(110, 19, 122),rgb(231, 191, 243));
     outline: none;
     height: 42px;
     border-radius: 5px;
     width: 110px;
-    font-weight: bolder;
+    font-weight:800;
     font-size: medium;
     letter-spacing: 1.2px;
-    color: rgb(53, 9, 28);
+    color: rgb(7, 9, 54);
     font-family:Arial, Helvetica, sans-serif;
     border-top: 1.5px solid rgb(74, 8, 74);
     border-left: 1.5px solid rgb(130, 48, 130);

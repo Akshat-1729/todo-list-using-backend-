@@ -46,8 +46,9 @@
                     <% for(let i of todo_tasks){%>
                         <li>
                             <div class="box">
-            
-                                    <input type="checkbox" class="tick-box" >
+                                
+                                    <input type="checkbox" class="tick-box" data-task-id="<%= i %>" data-task-decorator="<%= i %>">
+                                
                                 
                                 <div class="task-info">
                                     <h3><%=i.task%></h3>
@@ -58,7 +59,7 @@
                                 </div>
                                 <div class="done">
                                     <a href="/delete-task/?id=<%=i._id%>">
-                                        <input type="button" value="Completed">
+                                        <input type="button" value="Delete">
                                     </a>
                                 </div>
                             </div>
