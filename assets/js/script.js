@@ -4,7 +4,6 @@ const task =document.querySelectorAll('.task-info h3');
 const date =document.querySelectorAll('.task-info p');
 const ticks=document.querySelectorAll('.tick-box');
 
-
 for (let i = 0; i < textElements.length; i++) {
   if (textElements[i].innerText == "Work") {
     bgElements[i].style.backgroundColor = "rgb(255,85,85)";

@@ -32,7 +32,7 @@
             </div>
             <div id="dates">
                 <h3>Due Date</h3>
-                <input type="date" name="date" id="date-box">
+                <input type="date" name="date" id="date-box" >
             </div>
             <hr id="line">
             <div class="buttons">
@@ -41,7 +41,7 @@
         </form>
         </div>
         <section>
-            <div>
+            <div class="outer-box">
                 <ul>
                     <% for(let i of todo_tasks){%>
                         <li>
@@ -52,7 +52,7 @@
                                 
                                 <div class="task-info">
                                     <h3><%=i.task%></h3>
-                                    <p><i class="fa-sharp fa-solid fa-calendar-days"></i>&nbsp;&nbsp;<%=i.date%></p>
+                                    <p><i class="fa-sharp fa-solid fa-calendar-days"></i>&nbsp;&nbsp;<%= i.date ? i.date : 'No Due Date' %></p>
                                 </div>
                                 <div class="cat">
                                     <h3><%=i.category%></h3>
