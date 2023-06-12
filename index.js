@@ -2,7 +2,6 @@ const express=require('express');
 const app=express();
 const port=8000;
 const db=require('./config/mongoose');
-const Todo=require('./model/todo'); 
 app.use(express.static('assets'));
 //use express router
 app.use('/',require('./routes'));

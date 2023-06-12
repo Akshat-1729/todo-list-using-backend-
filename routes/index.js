@@ -21,4 +21,15 @@ router.post('/addTask',function(req,res){
         return res.redirect('back');
     });
 });
+router.get('/delete-task',function(req,res){
+    let id=req.query.id;
+    Todo.findByIdAndDelete(id)
+    .then(function(){
+        return res.redirect('/');
+    })
+    .catch(function(err){
+        console.log('Cant delete from the DB',err);
+        return;
+    });
+});
 module.exports=router
