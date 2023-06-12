@@ -15,6 +15,7 @@
     <hr>
     <main>
         <div id="forms">
+            <form action="/addTask" method="POST">
             <div id="desc">
                 <h3>Description</h3>
                 <input type="text" name="description" id="description-box" placeholder="What do you need to do">
@@ -22,11 +23,11 @@
             <div id="catgry">
                 <h3>Category</h3>
                 <select name="categories" id="category-box">
-                    <option value="per">Personal</option>
-                    <option value="wrk">Work</option>
-                    <option value="cln">Cleaning</option>
-                    <option value="clg">College/School</option>
-                    <option value="oth">Other</option>
+                    <option value="Personal">Personal</option>
+                    <option value="Work">Work</option>
+                    <option value="Cleaning">Cleaning</option>
+                    <option value="College">College/School</option>
+                    <option value="Other">Other</option>
                 </select>
             </div>
             <div id="dates">
@@ -35,37 +36,34 @@
             </div>
             <hr id="line">
             <div class="buttons">
-                <button id="add"><i class="fa-sharp fa-solid fa-plus"></i> Add Task</button>
-                <button id="delete" ><i class="fa-sharp fa-solid fa-trash"></i>Delete Tasks</button>
+                <button id="add" type="submit"><i class="fa-sharp fa-solid fa-plus"></i> Add Task</button>
             </div>
+        </form>
+        <div class="buttons">
+            <a href="">
+                <button id="delete" type="submit" ><i class="fa-sharp fa-solid fa-trash"></i>Delete Tasks</button>
+            </a>
+        </div>
         </div>
         <section>
             <div>
                 <ul>
-                    <li>
-                        <div class="box">
-                            <input type="checkbox" class="tick-box">
-                            <div class="task-info">
-                                <h3>wash cloths</h3>
-                                <p><i class="fa-sharp fa-solid fa-calendar-days"></i>&nbsp;&nbsp;29/11/2003</p>
+                    <% for(let i of todo_tasks){%>
+                        <li>
+                            <div class="box">
+                                <input type="checkbox" class="tick-box">
+                                <div class="task-info">
+                                    <h3><%=i.task%></h3>
+                                    <p><i class="fa-sharp fa-solid fa-calendar-days"></i>&nbsp;&nbsp;<%=i.date%></p>
+                                </div>
+                                <div class="cat">
+                                    <h3><%=i.category%></h3>
+                                </div>
                             </div>
-                            <div class="cat">
-                                <h3>Personal</h3>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="box">
-                            <input type="checkbox" class="tick-box">
-                            <div class="task-info">
-                                <h3>wash cloths</h3>
-                                <p><i class="fa-sharp fa-solid fa-calendar-days"></i>&nbsp;&nbsp;29/11/2003</p>
-                            </div>
-                            <div class="cat">
-                                <h3>Personal</h3>
-                            </div>
-                        </div>
-                    </li>
+                        </li>
+                    <%}%>
+                    
+                    
                 </ul>
             </div>
         </section>
