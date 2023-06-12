@@ -11,12 +11,7 @@ const todo_schema=new mongoose.Schema({
     category:{
         type:String,
         required:true
-    },
-    status:{
-        type: Boolean,
-        required:true
     }
-
 });
 const Todo=mongoose.model('todo',todo_schema);
 module.exports=Todo;

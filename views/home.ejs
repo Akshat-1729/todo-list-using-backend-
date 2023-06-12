@@ -39,11 +39,6 @@
                 <button id="add" type="submit"><i class="fa-sharp fa-solid fa-plus"></i> Add Task</button>
             </div>
         </form>
-        <div class="buttons">
-            <a href="">
-                <button id="delete" type="submit" ><i class="fa-sharp fa-solid fa-trash"></i>Delete Tasks</button>
-            </a>
-        </div>
         </div>
         <section>
             <div>
@@ -51,7 +46,9 @@
                     <% for(let i of todo_tasks){%>
                         <li>
                             <div class="box">
-                                <input type="checkbox" class="tick-box">
+            
+                                    <input type="checkbox" class="tick-box" >
+                                
                                 <div class="task-info">
                                     <h3><%=i.task%></h3>
                                     <p><i class="fa-sharp fa-solid fa-calendar-days"></i>&nbsp;&nbsp;<%=i.date%></p>
@@ -59,11 +56,14 @@
                                 <div class="cat">
                                     <h3><%=i.category%></h3>
                                 </div>
+                                <div class="done">
+                                    <a href="/delete-task/?id=<%=i._id%>">
+                                        <input type="button" value="Completed">
+                                    </a>
+                                </div>
                             </div>
                         </li>
-                    <%}%>
-                    
-                    
+                    <%}%>                  
                 </ul>
             </div>
         </section>

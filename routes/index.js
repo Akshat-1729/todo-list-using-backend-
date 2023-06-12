@@ -9,8 +9,7 @@ router.post('/addTask',function(req,res){
     Todo.create({
         task:req.body.description,
         date: req.body.date,
-        category: req.body.categories,
-        status:false
+        category: req.body.categories
     })
     .then(newTask=>{
         console.log('********',newTask);
@@ -28,8 +27,9 @@ router.get('/delete-task',function(req,res){
         return res.redirect('/');
     })
     .catch(function(err){
-        console.log('Cant delete from the DB',err);
+        console.log('Error in deleting the task',err);
         return;
     });
 });
+
 module.exports=router
